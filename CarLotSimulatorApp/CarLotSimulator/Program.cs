@@ -27,6 +27,7 @@ namespace CarLotSimulator
             car1.HonkNoise = "Honk";
             car1.IsDrivable = true;
             lot.Cars.Add(car1);
+            Console.WriteLine($"Total number of cars in lot: {CarLot.numberOfCars}");
 
             Car car2 = new Car()
             {
@@ -38,9 +39,11 @@ namespace CarLotSimulator
                 IsDrivable = true
             };
             lot.Cars.Add(car2);
+            Console.WriteLine($"Total number of cars in lot: {CarLot.numberOfCars}");
 
             Car car3 = new Car(2023, "Tesla", "Cybertruck", "Zero", "BOOM!", true);
             lot.Cars.Add(car3);
+            Console.WriteLine($"Total number of cars in lot: {CarLot.numberOfCars}");
 
             //Call each of the methods for each car
             Console.WriteLine($"{car1.Year} {car1.Make} {car1.Model}");
